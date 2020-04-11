@@ -7,7 +7,8 @@ AND TABLE_SCHEMA = "techjobs";
 ## Part 2: Test it with SQL
 SELECT name
 FROM employer
-WHERE location LIKE "St. Louis, MO";
+WHERE location LIKE "%St%Louis%"
+OR location LIKE "%Saint%Louis%";
 
 ## Part 3: Test it with SQL
 
